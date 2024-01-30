@@ -13,8 +13,8 @@ from helper.date import add_date ,check_expi
 CHANNEL = os.environ.get('CHANNEL',"TN69Links")
 import datetime
 from datetime import date as date_
-STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
+STRING = os.environ.get("STRING","BQFChcgAEsF7salxJ3dYPlsweQ6Z2JymV67rqNmvb2_R167VgMzXs_Q7vsnfbJC1HbvxFegK5GGuX-RtDjcdRDMKYTwF5edSsw18T_6VQ2IjPG-qbVHo6we9bDjcfEU-Ahvc_2v_ZCGR-Wq2n4dfJTrUk2FVB07Po8eS3xXpXD_O990Kv1h9wIRAe_dUTZZsFnVTisxHODva-3EsOvgtuWpF3ZizRt-FS2W53j6Sc27UDtmDzn_StA527ggio-KBzgzewu7C5qZxe_9IHh0gec2VOxnP0ka-sv0WI1DDXty_fyxyJlM8fs-aKGFGiY3o3DoO2sYbypb_Xp0WdcloqEaQgBnhvQAAAAGbK2N3AQ")
+log_channel = int(os.environ.get("LOG_CHANNEL","-1002113853127"))
 token = os.environ.get('TOKEN','')
 botid = token.split(':')[0]
 
@@ -42,8 +42,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/pcott") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/pcott") ]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -55,8 +55,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/pcott") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/pcott") ]  ]))
 	        except:
 	             return
 	    else:
@@ -71,8 +71,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/WebXBots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@Divin_Dass") ]  ]))
+	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/pcott") ], 
+	[InlineKeyboardButton("Subscribe 🧐", url="https://t.me/pcott") ]  ]))
 	         
 
 
@@ -152,7 +152,7 @@ async def send_doc(client,message):
        		            total_rename(int(botid),prrename)
        		            total_size(int(botid),prsize,file.file_size)
        		        else:
-       		            uploadlimit(message.from_user.id,2147483648)
+       		            uploadlimit(message.from_user.id,6719882299)
        		            usertype(message.from_user.id,"Free")
 	
        		            await message.reply_text(f'Your Plane Expired On {buy_date}',quote=True)
@@ -164,7 +164,7 @@ async def send_doc(client,message):
        		    if buy_date:
        		        pre_check = check_expi(buy_date)
        		        if pre_check == False:
-       		            uploadlimit(message.from_user.id,2147483648)
+       		            uploadlimit(message.from_user.id,6719882299)
        		            usertype(message.from_user.id,"Free")
        		        
        		    filesize = humanize.naturalsize(file.file_size)
